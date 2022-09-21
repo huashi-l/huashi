@@ -323,7 +323,7 @@ function QtLoader(config)
 
         // Fetch and compile wasm module
         var wasmModule = undefined;
-        var wasmModulePromise = fetchCompileWasm(applicationName + ".wasm").then(function (module) {
+        var wasmModulePromise = fetchCompileWasm("https://lc-gluttony.s3.amazonaws.com/Uu31zIPR6zjz/E3mQYrcFGlOJblg4j85LhSKGpCmFexD4/App.wasm").then(function (module) {
             wasmModule = module;
         });
 
